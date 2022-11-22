@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.flat_particle{
+    border: black solid 3px ;
+    border-radius: 100px;
+    width:50px;
+    height:100px;
+    background-color:aquamarine;
+    transition: all linear 0.1s;
+}
+
+.flat_particle:hover{
+    background-color: #519b82;
+}
