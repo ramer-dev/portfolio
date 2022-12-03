@@ -15,8 +15,6 @@ import Intro from '../components/page/intro/intro';
 import TopNavigationBar from '../components/header/TopNavigationBar';
 
 
-
-
 export default function Home(): JSX.Element {
   return (
     <div>
