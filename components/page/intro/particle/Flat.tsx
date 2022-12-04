@@ -4,25 +4,27 @@ import { distance } from "popmotion";
 // import './flat_particle.css';
 
 type ParticleType = {
-    top: number,
-    left: number,
     width: number,
     height: number,
-    zDepth: number
+    zDepth: number,
+    left:number,
+    top:number
 }
 
 export default function Flat(props: ParticleType): JSX.Element {
     const x = useMotionValue(0);
     const spring = useSpring(x);
-    const top = props.top
+
     return (
             <AnimatePresence mode='wait'>
-                <motion.div className={`absolute bg-slate-600 w-12 h-12 rounded-full`} initial={{ opacity: 0, scale: .5 }} animate={{ opacity: 1, scale: 1 }}
-                    style={{top:props.top}}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.2 }}
+                <motion.div className={`relative bg-slate-600 rounded-full`}
+                    initial={{y:100}}
+                    whileInView={"visible"}
+                    viewport={{once:true}}
+                    animate={{ y:[10,-10, 10,], }}
+                    transition={{ duration:3, ease: "easeInOut", times:[0,0.5, 1], repeat:Infinity, repeatDelay:0}}
+                    style={{width:props.width, height:props.height, left:props.left, top:props.top}}
                 >
-
                 </motion.div>
 
             </AnimatePresence>
