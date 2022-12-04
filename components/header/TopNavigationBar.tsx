@@ -1,19 +1,16 @@
 import React from "react";
 
 export default function TopNavigationBar(): JSX.Element {
-    const onClickHandler = () => {
-        console.log('click')
-    } 
-    
     return (
-        <div className=" h-12 flex justify-between px-40">
-            <div className="my-3 text-xs"> Logo </div>
-            <div className="flex gap-4">
-                <span onClick={onClickHandler}>test</span>
-                <span>test</span>
-                <span>test</span>
-
+        <div className={'px-12 h-16 flex justify-between'}>
+            <div className={"p-5"}>LOGO</div>
+            <div className={"flex gap-2"}>
+                <span className={"p-5"}>Profile</span>
+                <span className={"p-5"}>Skill</span>
+                <span className={"p-5"}>Project</span>
+                <span className={"p-5"}>Career</span>
             </div>
+
         </div>
     )
 }
