@@ -3,7 +3,7 @@ import Flat from "./particle/Flat";
 
 export default function Intro(): JSX.Element {
 
-
+    // Todo : edit this thing
     const placer = () => {
         const arr = Array(15).fill(false)
         const mod_five: number[] = []
@@ -34,8 +34,6 @@ export default function Intro(): JSX.Element {
                         : <div key={i} className={"item"}/>
                 })
                 }
-
-
             </div>
         </div>
 
