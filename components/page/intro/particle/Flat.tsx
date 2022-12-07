@@ -7,8 +7,8 @@ type ParticleType = {
     width: number,
     height: number,
     zDepth: number,
-    left:number,
-    top:number
+    // left:number,
+    // top:number
 }
 
 export default function Flat(props: ParticleType): JSX.Element {
@@ -17,13 +17,13 @@ export default function Flat(props: ParticleType): JSX.Element {
 
     return (
             <AnimatePresence mode='wait'>
-                <motion.div className={`relative bg-slate-600 rounded-full`}
+                <motion.div className={`grid-item relative bg-slate-600 rounded-full`}
                     initial={{y:100}}
                     whileInView={"visible"}
                     viewport={{once:true}}
                     animate={{ y:[10,-10, 10,], }}
                     transition={{ duration:3, ease: "easeInOut", times:[0,0.5, 1], repeat:Infinity, repeatDelay:0}}
-                    style={{width:props.width, height:props.height, left:props.left, top:props.top}}
+                    style={{width:props.width, height:props.height}}
                 >
                 </motion.div>
 

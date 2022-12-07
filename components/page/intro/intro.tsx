@@ -1,37 +1,44 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Flat from "./particle/Flat";
 
 export default function Intro(): JSX.Element {
 
+    const [flatParticle, setFlatParticle] = useState(Array(15).fill(false))
     // Todo : edit this thing
     const placer = () => {
         const arr = Array(15).fill(false)
-        const mod_five: number[] = []
-        const mod_three: number[] = []
+        const fiveList: number[] = []
+        const threeList: number[] = []
         let count: number = 0;
-        while (true) {
-            const ban = Math.floor(Math.random() * 15 + 1)
+        while (count < 3) {
+            const ban = Math.floor(Math.random() * 15)
+            const divFive = Math.floor(ban  / 5 - 0.1) // x
+            const divThree = Math.floor(ban / 3 - 0.1) // y
 
-            if (!(ban % 5 in mod_five && ban % 3 in mod_three)) {
-                mod_five.push(ban % 5)
-                mod_three.push(ban % 3)
-                arr[ban - 1] = true
+            if (!(fiveList.includes(divFive)) || !(threeList.includes(divThree))) {
+                console.log(ban, divFive,divThree)
+                fiveList.push(divFive)
+                threeList.push(divThree)
+                arr[ban] = true
                 count += 1
             }
-
-            if (count == 3)
-                console.log(arr)
-                return arr
         }
+        console.log(arr)
+        return arr;
 
     }
+
+    useEffect(()=>{
+        setFlatParticle(placer());
+    },[])
+
     return (
         <div className={"h-fit bg-green-400 my-0 mx-auto"}>
-            <div className={"grid"}>
-                {placer().map((t, i) => {
+            <div className={"grid grid-cols-5 grid-rows-3"}>
+                {flatParticle.map((t, i) => {
                     return t
-                        ? <Flat key={i} left={i%3 * 100} top={i%5 * 100} width={100} height={150} zDepth={1}/>
-                        : <div key={i} className={"item"}/>
+                        ? <Flat key={i} width={100} height={150} zDepth={1}/>
+                        : <div className={'grid-item'} key={i}/>
                 })
                 }
             </div>
