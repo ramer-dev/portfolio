@@ -29,10 +29,11 @@ export default function Home(): JSX.Element {
 
       <main className={'bg-slate-100  min-h-screen flex-row'}>
         <Intro />
-        <Career />
+        <Skill />
         <Profile />
         <Project />
-        <Skill />
+        <Career />
+
         {/*<div className={css.scene}>*/}
           {/* <Canvas/> */}
           {/*<Canvas shadows={true} className={css.canvas}*/}
