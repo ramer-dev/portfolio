@@ -17,7 +17,7 @@ export default function Flat(props: ParticleType): JSX.Element {
 
     return (
             <AnimatePresence mode='wait'>
-                <motion.div className={`grid-item relative bg-slate-600 rounded-full`}
+                <motion.div className={`grid-item relative bg-slate-600 rounded-full mx-auto`}
                     initial={{y:100}}
                     whileInView={"visible"}
                     viewport={{once:true}}

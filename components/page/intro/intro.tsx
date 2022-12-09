@@ -23,7 +23,6 @@ export default function Intro(): JSX.Element {
                 count += 1
             }
         }
-        console.log(arr)
         return arr;
 
     }
