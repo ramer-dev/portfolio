@@ -1,7 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {MutableRefObject, useEffect, useRef, useState} from "react";
 import Flat from "./particle/Flat";
 
 export default function Intro(): JSX.Element {
+
+    const canvas = useRef();
+    let ctx = null;
+
 
     const [flatParticle, setFlatParticle] = useState(Array(15).fill(false))
     // Todo : edit this thing
@@ -28,6 +32,7 @@ export default function Intro(): JSX.Element {
     }
 
     useEffect(()=>{
+
         setFlatParticle(placer());
     },[])
 
@@ -41,6 +46,7 @@ export default function Intro(): JSX.Element {
                 })
                 }
             </div>
+            {/*<canvas ref={canvas}></canvas>*/}
         </div>
 
     )
