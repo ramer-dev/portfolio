@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4954e749-db0f-436d-9c33-3854e63c361e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/page/Skill.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/Skill.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/page/intro/intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/intro/intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/page/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/Profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +93,7 @@
       <workItem from="1669906325100" duration="4496000" />
       <workItem from="1669969142262" duration="2980000" />
       <workItem from="1670496335648" duration="11295000" />
+      <workItem from="1670851241452" duration="2214000" />
     </task>
     <task id="LOCAL-00001" summary="STOP USING CANVAS OMG">
       <created>1669020045307</created>
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670403555068</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="need to reset">
+      <created>1670741465580</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670741465580</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +141,7 @@
     <MESSAGE value="Construct" />
     <MESSAGE value="home set" />
     <MESSAGE value="particle bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="particle bug" />
+    <MESSAGE value="need to reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="need to reset" />
   </component>
 </project>
