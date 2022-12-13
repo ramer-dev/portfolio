@@ -15,7 +15,7 @@ export default function Profile(): JSX.Element {
                 </div>
 
                 <div className={""}>
-                    <h1>이메일</h1>
+                    <h1>이메일 내용</h1>
                     <em>ramer.dev@kakao.com</em>
                 </div>
 
