@@ -4,7 +4,7 @@ import {stack} from '../../data/stack.json';
 export default function Skill(): JSX.Element {
     return (
         <div className={'skills h-128'}>스킬
-            <div className={'max-w-6xl mx-auto'}>
+            <div className={'max-w-6xl mx-auto flex'}>
                 <div className={'flex flex-wrap gap-10 justify-around rounded-xl mx-5'}>
 
                     <div className={'flex-shrink-0 w-80'}>
