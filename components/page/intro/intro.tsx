@@ -1,17 +1,23 @@
-import React, {RefObject, useEffect, useRef} from "react";
-import Flat from "./particle/Flat";
+import React, {RefObject, useEffect, useRef, useState} from "react";
+import {useRecoilValue} from "recoil";
+import {globalWidthState} from "../../../lib/states/states";
+import {useCanvas} from "../../../lib/hooks/useCanvas";
+import {useClientWidthHeight} from "../../../lib/hooks/useClientWidthHeight";
 
+const Intro: React.FC = () => {
 
-const Intro = () => {
-    const canvasRef: RefObject<HTMLCanvasElement> = useRef<HTMLCanvasElement>(null);
+    const mainRef = useRef<HTMLDivElement>(null);
+    const rect = useClientWidthHeight(mainRef)
 
-    useEffect(() => {
-        const canvas = canvasRef.current;
-        const ctx = canvas?.getContext('2d')
-    })
+    const fillBackground = (ctx : CanvasRenderingContext2D) => {
+        ctx.fillStyle = 'rgb(31,31,36)';
+        ctx.fillRect(0,0, rect.width, rect.height)
+    }
 
-    return <div className={'w-max h-256'}>
-        <canvas className={'m-0 p-0 w-max h-max'} ref={canvasRef}/>
+    const canvasRef = useCanvas(rect.width, rect.height, fillBackground)
+
+    return <div className={'w-full h-screen'} ref={mainRef}>
+        <canvas className={'h-full m-0 p-0'} ref={canvasRef}/>
     </div>
 }
 export default Intro;
