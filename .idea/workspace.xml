@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4954e749-db0f-436d-9c33-3854e63c361e" name="Changes" comment="">
+    <list default="true" id="795ce5ac-698f-436e-8207-b1a6e4349fce" name="Changes" comment="Background filled">
+      <change afterPath="$PROJECT_DIR$/pages/canvas/LightParticle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/page/intro/intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/intro/intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/canvas/box.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/canvas/floor.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/canvas/lightBulb.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +21,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
         <option value="tsconfig.json" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -52,7 +56,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;power.mode.ii&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\Web\\portfolio\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\Programming\\Web\\portfolio\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -77,7 +81,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4954e749-db0f-436d-9c33-3854e63c361e" name="Changes" comment="" />
+      <changelist id="795ce5ac-698f-436e-8207-b1a6e4349fce" name="Changes" comment="Background filled" />
       <created>1668302153791</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -98,10 +102,10 @@
       <workItem from="1669906325100" duration="4496000" />
       <workItem from="1669969142262" duration="2980000" />
       <workItem from="1670496335648" duration="11295000" />
-      <workItem from="1670851241452" duration="4132000" />
-      <workItem from="1671185995746" duration="147000" />
-      <workItem from="1671412763098" duration="1076000" />
-      <workItem from="1671532558094" duration="3863000" />
+      <workItem from="1670851241452" duration="2832000" />
+      <workItem from="1671767978766" duration="598000" />
+      <workItem from="1671967356616" duration="2754000" />
+      <workItem from="1672048075138" duration="3388000" />
     </task>
     <task id="LOCAL-00001" summary="STOP USING CANVAS OMG">
       <created>1669020045307</created>
@@ -145,12 +149,12 @@
       <option name="project" value="LOCAL" />
       <updated>1670853795328</updated>
     </task>
-    <task id="LOCAL-00007" summary="profile">
-      <created>1670941055646</created>
+    <task id="LOCAL-00007" summary="Background filled">
+      <created>1671725329784</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1670941055646</updated>
+      <updated>1671725329784</updated>
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
@@ -165,6 +169,8 @@
     <MESSAGE value="particle bug" />
     <MESSAGE value="need to reset" />
     <MESSAGE value="profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile" />
+    <MESSAGE value="Adapted Recoil" />
+    <MESSAGE value="Background filled" />
+    <option name="LAST_COMMIT_MESSAGE" value="Background filled" />
   </component>
 </project>
