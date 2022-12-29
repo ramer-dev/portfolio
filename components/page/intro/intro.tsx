@@ -44,7 +44,7 @@ const Intro: React.FC = () => {
 
     const canvasRef = useCanvas(rect.width, rect.height, animate)
 
-    return <div className={'w-full h-screen bg-neutral-900 overflow-hidden'} ref={mainRef}>
+    return <div className={'w-full relative h-screen bg-neutral-900 overflow-x-hidden'} ref={mainRef}>
         <Flat height={400} width={200} left={100} top={200}/>
         <Flat height={450} width={150} left={50} top={250}/>
         <Flat height={200} width={100} left={0} top={380}/>
@@ -52,7 +52,7 @@ const Intro: React.FC = () => {
         <Flat height={450} width={150} left={900} top={350}/>
         <Flat height={200} width={100} left={800} top={380}/>
 
-        <div className={'relative top-1/2 mx-24'} ref={parRef} onMouseEnter={eventHandler} onMouseLeave={eventHandler}>
+        <div className={'relative top-1/2 w-96 mx-32'} ref={parRef} onMouseEnter={eventHandler} onMouseLeave={eventHandler}>
             <h1 className={'text-8xl text-white font-bold hover:opacity-80 transition cursor-default'}>HS Shin</h1>
             <p className={'mx-1 text-xl text-white hover:opacity-80 transition cursor-default'}>FE Developer</p>
         </div>

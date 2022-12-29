@@ -6,15 +6,11 @@ import {distance} from "popmotion";
 type ParticleType = {
     width: number,
     height: number,
-
     left: number,
     top: number
 }
 
 export default function Flat(props: ParticleType): JSX.Element {
-    const x = useMotionValue(0);
-    const spring = useSpring(x);
-
 
     return (
         <AnimatePresence mode='wait'>
