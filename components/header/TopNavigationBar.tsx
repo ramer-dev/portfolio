@@ -1,9 +1,14 @@
 import React, {RefObject, useEffect, useRef, useState} from "react";
+import {useRecoilState} from "recoil";
+import {clientScrollY} from "../../lib/states/states";
 
 export default function TopNavigationBar(): JSX.Element {
     const [clientWindowHeight, setClientWindowHeight] = useState(false);
+    const [scrollY, setClientScrollY] = useRecoilState(clientScrollY);
+
     const handleScroll = () => {
-        setClientWindowHeight(window.scrollY > 1);
+        setClientWindowHeight(scrollY > 1);
+        setClientScrollY(window.scrollY)
     };
 
 
@@ -13,8 +18,8 @@ export default function TopNavigationBar(): JSX.Element {
     },[] )
 
     useEffect(() => {
-
-    })
+        console.log(scrollY)
+    }, )
     return (
         <div className={'fixed w-full z-50 transition bg-white ' + (!clientWindowHeight ? 'bg-transparent text-white' : 'bg-white text-black')}>
             <div className={'px-12 h-16 flex justify-between '}>

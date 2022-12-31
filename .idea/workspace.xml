@@ -7,10 +7,10 @@
     <list default="true" id="4954e749-db0f-436d-9c33-3854e63c361e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/TopNavigationBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/TopNavigationBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/page/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/project/Project.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/page/intro/intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/intro/intro.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/page/intro/particle/Flat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/intro/particle/Flat.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/states/states.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/states/states.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +108,7 @@
       <workItem from="1671412763098" duration="1076000" />
       <workItem from="1671532558094" duration="3863000" />
       <workItem from="1672319392630" duration="1473000" />
+      <workItem from="1672447164443" duration="5842000" />
     </task>
     <task id="LOCAL-00001" summary="STOP USING CANVAS OMG">
       <created>1669020045307</created>
