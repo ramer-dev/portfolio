@@ -8,14 +8,14 @@ import TopNavigationBar from '../components/header/TopNavigationBar';
 import {RefObject, useEffect, useRef, useState} from "react";
 import {useClientWidthHeight} from "../lib/hooks/useClientWidthHeight";
 import {globalWidthState} from '../lib/states/states'
-import {useRecoilState} from "recoil";
-import { RectSizeType } from '../lib/types/global';
+import {SetterOrUpdater, useSetRecoilState} from "recoil";
+import {RectSizeType} from '../lib/types/global';
 
 
 export default function Home(): JSX.Element {
     const mainRef: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
     const rect: RectSizeType = useClientWidthHeight(mainRef)
-    const [recoilWidth, setRecoilWidth] = useRecoilState(globalWidthState);
+    const setRecoilWidth: SetterOrUpdater<number> = useSetRecoilState(globalWidthState);
     useEffect(() => {
         setRecoilWidth(rect.width)
     }, [rect, setRecoilWidth])
