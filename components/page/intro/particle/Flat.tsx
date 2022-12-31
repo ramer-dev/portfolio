@@ -21,7 +21,7 @@ export default function Flat(props: ParticleType): JSX.Element {
     return (
         <AnimatePresence mode='wait'>
             <motion.div className={`absolute rounded-full`}
-                        whileInView={["initial"]}
+                        animate={["initial"]}
                         initial={{rotateZ: -30, opacity: .6}}
                         whileHover={["grow"]}
                         transition={{

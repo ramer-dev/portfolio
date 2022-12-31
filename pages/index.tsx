@@ -32,7 +32,7 @@ export default function Home(): JSX.Element {
                 <TopNavigationBar/>
             </header>
 
-            <main className={'bg-slate-100 min-h-screen flex-row'}>
+            <main className={'bg-slate-100 min-h-screen flex-row bg-neutral-900 text-white'}>
                 <Intro/>
                 <Skill/>
                 <Profile/>

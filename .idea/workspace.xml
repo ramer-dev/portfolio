@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4954e749-db0f-436d-9c33-3854e63c361e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/TopNavigationBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/TopNavigationBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/page/intro/intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/intro/intro.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/page/intro/particle/Flat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/page/intro/particle/Flat.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/states/states.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/states/states.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,7 @@
       <workItem from="1671412763098" duration="1076000" />
       <workItem from="1671532558094" duration="3863000" />
       <workItem from="1672319392630" duration="1473000" />
-      <workItem from="1672447164443" duration="5842000" />
+      <workItem from="1672447164443" duration="6592000" />
     </task>
     <task id="LOCAL-00001" summary="STOP USING CANVAS OMG">
       <created>1669020045307</created>
@@ -166,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672125580715</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Particle Movement &amp; Parrelex">
+      <created>1672453116850</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672453116850</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +185,7 @@
     <MESSAGE value="need to reset" />
     <MESSAGE value="profile" />
     <MESSAGE value="Particle System Applied" />
-    <option name="LAST_COMMIT_MESSAGE" value="Particle System Applied" />
+    <MESSAGE value="Particle Movement &amp; Parrelex" />
+    <option name="LAST_COMMIT_MESSAGE" value="Particle Movement &amp; Parrelex" />
   </component>
 </project>
