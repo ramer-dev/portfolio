@@ -34,8 +34,8 @@ export default function Home(): JSX.Element {
 
             <main className={'bg-slate-100 min-h-screen flex-row bg-neutral-900 text-white'}>
                 <Intro/>
-                <Skill/>
                 <Profile/>
+                <Skill/>
                 <Project/>
                 <Career/>
 
