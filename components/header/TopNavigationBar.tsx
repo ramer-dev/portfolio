@@ -17,9 +17,9 @@ export default function TopNavigationBar(): JSX.Element {
         window.addEventListener("resize", handleScroll)
     },[] )
 
-    useEffect(() => {
-        console.log(scrollY)
-    }, )
+    // useEffect(() => {
+    //     console.log(scrollY)
+    // }, )
     return (
         <div className={'fixed w-full z-50 transition bg-white ' + (!clientWindowHeight ? 'bg-transparent text-white' : 'bg-white text-black')}>
             <div className={'px-12 h-16 flex justify-between '}>

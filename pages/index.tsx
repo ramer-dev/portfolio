@@ -5,7 +5,7 @@ import Project from '../components/page/project/Project';
 import Skill from '../components/page/Skill';
 import Intro from '../components/page/intro/intro';
 import TopNavigationBar from '../components/header/TopNavigationBar';
-import {RefObject, useEffect, useRef, useState} from "react";
+import {RefObject, useEffect, useRef} from "react";
 import {useClientWidthHeight} from "../lib/hooks/useClientWidthHeight";
 import {globalWidthState} from '../lib/states/states'
 import {SetterOrUpdater, useSetRecoilState} from "recoil";
@@ -40,7 +40,6 @@ export default function Home(): JSX.Element {
                 <Skill/>
                 <Project/>
                 <Career/>
-
             </main>
 
         </div>
