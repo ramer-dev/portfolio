@@ -32,7 +32,7 @@ export default function Project(): JSX.Element {
                 <ul className={'flex list-none gap-4 text-4xl justify-around'}>
                     {majorList.map(t => {
                         if (!category.includes(t)) {
-                            return <li key={t} className={"transition hover:text-yellow-200 cursor-pointer"}
+                            return <li key={t} className={"transition cursor-pointer"}
                                        onClick={eventHandler}>{t}</li>
                         } else {
 
@@ -47,7 +47,7 @@ export default function Project(): JSX.Element {
 
             </div>
             <div className={'flex gap-5'}>
-                <ProjectItem/>
+                <ProjectItem number={1} category={['FE','ETC']} content={"내용"} title={"제에모옥"}/>
             </div>
         </div>
     )

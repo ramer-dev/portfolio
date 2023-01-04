@@ -46,7 +46,8 @@ export default function Flat(props: ParticleType): JSX.Element {
                         }}
                         style={{
                             width: props.width, height: props.height, left: props.left, top: props.top + (props.depth * clientY) * 0.04,
-                            background: "linear-gradient(180deg, rgba(217, 217, 217, 0) 8.33%, rgba(217, 217, 217, 0.43) 100%)"
+                            background: "linear-gradient(180deg, rgba(217, 217, 217, 0) 8.33%, rgba(217, 217, 217, 0.43) 100%)",
+                            backdropFilter: "blur(10px)"
                         }}
             >
             </motion.div>
