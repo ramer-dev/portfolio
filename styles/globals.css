@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.flat_particle{
-    border: black solid 3px ;
-    border-radius: 100px;
-    width:50px;
-    height:100px;
-    background-color:aquamarine;
-    transition: all linear 0.1s;
-}
-
-.flat_particle:hover{
-    background-color: #519b82;
+@layer components {
+    .glass {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 4px;
+    }
 }
