@@ -1,0 +1,17 @@
+{
+  "stack": {
+    "Frontend": {
+      "CSS": "img/css.png",
+      "HTML": "img/html.png",
+      "JavaScript": "img/JavaScript.png"
+    },
+    "Backend": [],
+    "Mobile": [],
+    "Game & Simulation": [],
+    "Deployment": [],
+    "Version Control": [],
+    "Communication": [],
+    "Certificate": [],
+    "ETC": []
+  }
+}
