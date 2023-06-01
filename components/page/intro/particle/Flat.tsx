@@ -7,8 +7,6 @@ type ParticleType = {
     width: number,
     height: number,
     zDepth: number,
-    // left:number,
-    // top:number
 }
 
 export default function Flat(props: ParticleType): JSX.Element {
